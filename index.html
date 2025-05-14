@@ -260,6 +260,12 @@
 
             <form action="https://formsubmit.co/butterskotch.28@gmail.com" method="POST" class="contact-form">
 
+               <!--HONEY POT-->
+               <input type="text" name="_honey" style="display: none;">
+
+               <!--Disable Captcha-->
+               <input type="hidden" name="_captcha" value="false">
+
                <div class="input-wrap">
                   <input type="text" class="contact-input" autocomplete="off" name="First Name" required placeholder="First Name" id="firtname">
            
@@ -267,19 +273,19 @@
                </div>
 
                <div class="input-wrap">
-                  <input type="text" class="contact-input" autocomplete="off" name="First Name" placeholder="Last Name" id="lastname">
+                  <input type="text" class="contact-input" autocomplete="off" name="Last Name" placeholder="Last Name" id="lastname">
           
                   <i class=" icon fa-solid fa-address-card"></i>
                </div>
 
                <div class="input-wrap box">
-                  <input type="email" class="contact-input" autocomplete="off" placeholder="Email" required id="email">
+                  <input type="email" class="contact-input" autocomplete="off" name="Email" placeholder="Email" required id="email">
          
                   <i class=" icon fa-solid fa-envelope"></i>
                </div>
 
                <div class="input-wrap box">
-                <textarea name="Message" autocomplete="off" class="contact-input" required placeholder="What do you wanna say us?" id="subject"></textarea>
+                <textarea name="Message" autocomplete="off" class="contact-input" name="Message" required placeholder="What do you wanna say us?" id="subject"></textarea>
              
                   <i class=" icon fa-solid fa-inbox"></i>
                </div>
