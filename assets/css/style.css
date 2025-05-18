@@ -10,12 +10,14 @@
 }
 
 body{
-  
-min-height: 100vh;
 
+min-height: 100vh;
+width: 100vw;
+overflow-x: hidden !important;
 
     background-size: cover;
     background-position: center;
+
 }
 
 /*=============== VARIABLES CSS ===============*/
@@ -503,11 +505,21 @@ main{
 
 .description{
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
   max-width: 35rem;
   color: rgba(255, 255, 255, 0.642);
 }
 
+@media (max-width:720px){
+  .content .description{
+    font-size: 1rem;
+}}
+
+@media(max-width:400px){
+  .content .description{
+    font-size: .9rem;
+}
+}
 
 .buttons{
 margin-top: 2rem;
@@ -703,7 +715,6 @@ right: 4%;
 
 
 
- 
  /* MOBILE */
  @media (max-width:430px){
   .emerald{
@@ -721,6 +732,7 @@ right: 4%;
   .emerald{
     right: 65%;
     margin-top:-40% ;
+  
   }
  }
 
@@ -787,8 +799,79 @@ margin-top: -13%;
 }
 }
 
+/*--------------SERVICES----------*/
+
+.aboutphoto img{
+  padding: 40px 40px;
+  height: 550px;
+}
+
+@media (max-width:600px){
+  .aboutphoto img{
+    padding: 100px 100px;
+   
+  }
+}
+
+.aboutcontent{
+  padding: 100px 100px;
+  
+  color: white;
+}
+
+@media (max-width:1000px){
+  .aboutcontent{
+    padding: 30px 30px;
+  }
+}
+
+.aboutcontent h1{
+  font-size: 3rem;
+  font-weight: 1000;
+}
+
+.aboutcontent p{
+  margin-top: 30px;
+  
+  
+  line-height: 1.7rem;
+}
+
+.arow{
+  padding:140px 140px 0px 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+
+}
 
 
+@media (max-width:1500px){
+  .arow{
+    padding:140px 0px ;
+  }
+
+  .aboutcontent{
+    padding: 30px;
+    
+   
+  }
+}
+
+
+@media (max-width:960px){
+
+ 
+  .arow{
+    padding: 100px 0px ;
+    flex-direction: column;
+    
+  
+    
+  }
+}
 /*--------------SERVICES----------*/
 
 .ourservices{
@@ -796,20 +879,27 @@ margin-top: -13%;
   color: white;
   width: 100%;
 
-  padding: 0 19%;
+  padding: 0 15%;
+  
   
 }
 
+@media (max-width:530px){
+  .ourservices{
+    padding: 0 6%;
+  }
+}
 .row{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 2fr));
   grid-gap: 30px;
   
 }
 
 .services{
   text-align: center;
-  padding: 40px 30px;
+  line-height: 1.9rem;
+  padding: 40px 40px;
   font-size: 14px;
   border: 2px solid rgb(54, 54, 54);
   border-radius: 20px;
@@ -826,7 +916,30 @@ margin-top: -13%;
   
   
 }
+.scontact{
+  font-size: .8rem;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 8px 18px;
+  margin-top: 25px;
+  color: white;
+  border: solid 2px white;
+  transition: .5s ease-in-out;
+  
+}
 
+
+.scontact:hover{
+  font-size: .8rem;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 8px 18px;
+  margin-top: 25px;
+  border: solid 2px green;
+  background-color:  green;
+  
+  
+}
 
 .services p{
   text-align: justify;
@@ -843,7 +956,8 @@ margin-top: -13%;
   font-size: 15px;
 }
 
-.pdescp{
+.descp{
+  line-height: 1.5rem;
   color: rgba(255, 255, 255, 0.509);
   text-align: center;
   margin-top: -40px;
